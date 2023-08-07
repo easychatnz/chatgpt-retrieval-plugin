@@ -1,9 +1,9 @@
 {
   "schema_version": "v1",
-  "name_for_model": "retrieval",
-  "name_for_human": "Retrieval Plugin",
-  "description_for_model": "Plugin for searching through the user's documents (such as files, emails, and more) to find answers to questions and retrieve relevant information. Use it whenever a user asks something that might be found in their personal information.",
-  "description_for_human": "Search through your documents.",
+  "name_for_model": "midjourney_docs_db",
+  "name_for_human": "Midjourney Plugin",
+  "description_for_model": "Use this tool to get up to date information about Midjourney and the LangChain Python library",
+  "description_for_human": "Search through up to date information about Midjourney and the LangChain Python library.",
   "auth": {
     "type": "user_http",
     "authorization_type": "bearer"
