@@ -65,7 +65,7 @@ class PineconeDataStore(DataStore):
                 logger.error(f"Error connecting to index {PINECONE_INDEX}: {e}")
                 raise e
 
-    @retry(wait=wait_random_exponential(min=1, max=20), stop=stop_after_attempt(3))
+    @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
     async def _upsert(self, chunks: Dict[str, List[DocumentChunk]]) -> List[str]:
         """
         Takes in a dict from document id to list of document chunks and inserts them into the index.
