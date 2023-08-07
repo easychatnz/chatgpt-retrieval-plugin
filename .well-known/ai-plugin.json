@@ -10,10 +10,10 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://starfish-app-fcmbv.ondigitalocean.app/openapi.yaml",
+    "url": "https://starfish-app-fcmbv.ondigitalocean.app/.well-known/openapi.yaml",
     "has_user_authentication": false
   },
-  "logo_url": "https://starfish-app-fcmbv.ondigitalocean.app/logo.png",
-  "contact_email": "houhuabin@gmail.com",
+  "logo_url": "https://starfish-app-fcmbv.ondigitalocean.app/.well-known/logo.png",
+  "contact_email": "hello@contact.com",
   "legal_info_url": "http://example.com/legal-info"
 }
