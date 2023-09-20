@@ -169,7 +169,7 @@ class PineconeDataStore(DataStore):
                 new_result = DocumentChunkWithScore(
                     id="midjourney_prompt_template_1",  # ID 为空
                     score=1,  # 得分为空
-                    text="The framework for the Midjourney prompt is: Type + Subject + Environment + Composition + Shooting Medium + Style + Parameters.",  # 文本字段
+                    text="Each image corresponds to a Midjourney prompt. The format of each Midjourney prompt is as follows:: Type + Subject + Environment + Composition + Shooting Medium + Style + Parameters.",  # 文本字段
                     metadata=None  # 其他元数据为空
                 )
                 
