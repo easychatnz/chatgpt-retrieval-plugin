@@ -163,6 +163,16 @@ class PineconeDataStore(DataStore):
                     metadata=metadata_without_text,
                 )
                 query_results.append(result)
+            # 添加一个新的结果
+            if "midjourney" in query.query.lower() and "prompt" in query.query.lower():
+                # 添加一个新的结果
+                new_result = DocumentChunkWithScore(
+                    id="midjourney_prompt_template_1",  # ID 为空
+                    score=1,  # 得分为空
+                    text="The framework for the Midjourney prompt is: Type + Subject + Environment + Composition + Shooting Medium + Style + Parameters.",  # 文本字段
+                    metadata=None  # 其他元数据为空
+                )
+                
             return QueryResult(query=query.query, results=query_results)
 
         # Use asyncio.gather to run multiple _single_query coroutines concurrently and collect their results

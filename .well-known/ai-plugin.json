@@ -2,8 +2,8 @@
   "schema_version": "v1",
   "name_for_model": "midjourney_docs_db",
   "name_for_human": "Midjourney Plugin",
-  "description_for_model": "Use this tool to get up to date information about Midjourney and the LangChain Python library",
-  "description_for_human": "Search through up to date information about Midjourney and the LangChain Python library.",
+  "description_for_model": "Use this tool to get up to date information about Midjourney",
+  "description_for_human": "Search through up to date information about Midjourney.",
   "auth": {
     "type": "user_http",
     "authorization_type": "bearer"
@@ -14,6 +14,6 @@
     "has_user_authentication": false
   },
   "logo_url": "https://starfish-app-fcmbv.ondigitalocean.app/.well-known/logo.png",
-  "contact_email": "hello@contact.com",
+  "contact_email": "houhuabin@gmail.com",
   "legal_info_url": "http://example.com/legal-info"
 }

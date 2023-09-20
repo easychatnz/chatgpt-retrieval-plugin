@@ -121,7 +121,7 @@ async def query(
         logger.error(e)
         raise HTTPException(status_code=500, detail="Internal Service Error")
 
-
+# Delete endpoint
 @app.delete(
     "/delete",
     response_model=DeleteResponse,
@@ -145,12 +145,12 @@ async def delete(
         logger.error(e)
         raise HTTPException(status_code=500, detail="Internal Service Error")
 
-
+# Initialize datastore on app startup
 @app.on_event("startup")
 async def startup():
     global datastore
     datastore = await get_datastore()
 
-
+# Function to start the FastAPI application
 def start():
     uvicorn.run("server.main:app", host="0.0.0.0", port=8000, reload=True)
