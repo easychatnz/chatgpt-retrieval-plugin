@@ -169,7 +169,7 @@ class PineconeDataStore(DataStore):
                 new_result = DocumentChunkWithScore(
                     id="midjourney_prompt_template_1",  # ID 为空
                     score=1,  # 得分为空
-                    text="Each image corresponds to a Midjourney prompt. The format of each Midjourney prompt is as follows:: Type + Subject + Environment + Composition + Shooting Medium + Style + Parameters.",  # 文本字段
+                    text='Each image corresponds to a Midjourney prompt. The format of each Midjourney prompt is as follows:: Type + Subject + Environment + Composition + Shooting Medium + Style + Parameters.  Here, "Type" refers to the type of photo, such as a logo, watercolor painting, illustration, etc. "Subject" can be a person, object, animal, etc. "Environment" refers to the setting where the subject is located, which can be various natural settings or lighting effects. "Composition" indicates where the focus of the shot is and the orientation of the subject. "Shooting Medium" refers to the camera model, film, lens, etc. "Style" includes elements like era, artist, or specific artistic types like pop art. "Parameters" mainly include clarity.To generate a prompt, it should be as concise as possible and follow the framework order. Do not add explanatory words before the parameters. Prepositional phrases must be replaced with adjective-noun forms or converted into subject-verb-object phrases. Each parameter should be separated by a comma. At the end of the parameters, add "--ar x:x" to indicate the aspect ratio, where x represents a number. ',  # 文本字段
                     metadata=None  # 其他元数据为空
                 )
                 
