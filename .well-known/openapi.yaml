@@ -1,7 +1,7 @@
 openapi: 3.0.2
 info:
   title: Retrieval Plugin API
-  description: A retrieval API for querying and filtering documents about Midjourney based on natural language queries and metadata
+  description: A retrieval API for querying and filtering documents based on natural language queries and metadata
   version: 1.0.0
   servers:
     - url: https://sea-turtle-app-uxrdw.ondigitalocean.app/
