@@ -2,7 +2,7 @@
   "schema_version": "v1",
   "name_for_model": "midjourney_docs_db",
   "name_for_human": "Midjourney Plugin",
-  "description_for_model": "Use this plugin when the user's query is related to Midjourney, or when the user's query contains the keyword 'Midjourney",
+  "description_for_model": "Search through up to date information about Midjourney.",
   "description_for_human": "Search through up to date information about Midjourney.",
   "auth": {
     "type": "user_http",
