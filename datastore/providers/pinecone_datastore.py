@@ -164,7 +164,7 @@ class PineconeDataStore(DataStore):
                 )
                 query_results.append(result)
             # 添加一个新的结果
-            if True or "midjourney" in query.query.lower() and "prompt" in query.query.lower():
+            if  "midjourney" in query.query.lower() and "prompt" in query.query.lower():
                 logger.debug(f"query about midjourney prompt: {query.query}")
                 # 添加一个新的结果
                 new_result = DocumentChunkWithScore(
